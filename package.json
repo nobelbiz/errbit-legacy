@@ -1,0 +1,27 @@
+{
+  "name": "errbit-legacy",
+  "version": "1.0.0",
+  "description": "handler for legacy v2.* errbit ",
+  "main": "index.js",
+  "dependencies": {
+    "airbrake-notice": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-rivero/errbit-legacy.git"
+  },
+  "keywords": [
+    "errbit",
+    "node"
+  ],
+  "author": "Gabriel Rivero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-rivero/errbit-legacy/issues"
+  },
+  "homepage": "https://github.com/gabriel-rivero/errbit-legacy#readme"
+}
