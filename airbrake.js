@@ -5,9 +5,10 @@ const os             = require('os');
 
 module.exports = class Airbrake {
 
-  constructor({ host, key }) {
-    this.host               = host;
-    this.key                = key;
+  constructor({ host, port, key }) {
+    this.host = host;
+    this.key  = key;
+    this.port = port || 80;
   }
 
   createXml(message) {
@@ -83,14 +84,14 @@ module.exports = class Airbrake {
     return new Promise((resolve, reject) => {
       let req = http.request({
         hostname: this.host,
-        port: 80,
-        path: '/notifier_api/v2/notices',
-        headers: {
+        port    : this.port,
+        path    : '/notifier_api/v2/notices',
+        method  : 'POST',
+        headers : {
           'Accept'        : 'text/xml, application/xml',
           'Content-Type'  : 'text/xml',
           'Content-Length': message.length
-        },
-        method: 'POST'
+        }
       }, res => res.statusCode == 200 ? resolve() : reject(`${res.statusMessage}: ${res.statusMessage}`));
       req.write(message);
       req.end();
