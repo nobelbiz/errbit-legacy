@@ -26,4 +26,8 @@ module.exports = class AirbreakTransport extends Transport {
     this.airbrake.notify(error);
     callback();
   }
+
+  logException(message, meta, callback, error) {
+    return this.log('error', message, error, callback);
+  }
 };
