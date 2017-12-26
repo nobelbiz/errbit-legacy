@@ -1,3 +1,5 @@
+'use strict';
+
 const Transport = require('winston-transport');
 const Airbrake  = require('./airbrake');
 

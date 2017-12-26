@@ -1,3 +1,5 @@
+'use strict';
+
 const AirbrakeNotice = require("airbrake-notice");
 const notice         = AirbrakeNotice('2.3');
 const http           = require('http');
