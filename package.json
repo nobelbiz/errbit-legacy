@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/nobelbiz/errbit-legacy/issues"
   },
-  "homepage": "https://github.com/nobelbiz/errbit-legacy#readme"
+  "homepage": "https://github.com/nobelbiz/errbit-legacy#readme",
+  "publishConfig": {
+    "registry": "https://npm.smrttouch.com"
+  },
 }
