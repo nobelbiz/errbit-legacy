@@ -1,6 +1,6 @@
 {
   "name": "errbit-legacy",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "handler for legacy v2.* errbit ",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabriel-rivero/errbit-legacy.git"
+    "url": "git+https://github.com/nobelbiz/errbit-legacy.git"
   },
   "keywords": [
     "errbit",
@@ -22,7 +22,7 @@
   "author": "Gabriel Rivero",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gabriel-rivero/errbit-legacy/issues"
+    "url": "https://github.com/nobelbiz/errbit-legacy/issues"
   },
-  "homepage": "https://github.com/gabriel-rivero/errbit-legacy#readme"
+  "homepage": "https://github.com/nobelbiz/errbit-legacy#readme"
 }
