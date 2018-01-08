@@ -1,6 +1,6 @@
 {
   "name": "errbit-legacy",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "handler for legacy v2.* errbit ",
   "main": "index.js",
   "dependencies": {
@@ -27,5 +27,5 @@
   "homepage": "https://github.com/nobelbiz/errbit-legacy#readme",
   "publishConfig": {
     "registry": "https://npm.smrttouch.com"
-  },
+  }
 }
