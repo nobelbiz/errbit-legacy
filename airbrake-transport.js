@@ -11,7 +11,7 @@ module.exports = class AirbreakTransport extends Transport {
 
   log(level, message, meta, callback) {
     let error = { message: message || '' };
-    if (meta.message && meta.stack && (!message || message === '')) {
+    if (meta && meta.message && meta.stack && (!message || message === '')) {
       error = meta;
     } else {
       error.message = message;
