@@ -1,6 +1,6 @@
 {
-  "name": "errbit-legacy",
-  "version": "1.0.8",
+  "name": "@nobelbiz/errbit-legacy",
+  "version": "1.0.9",
   "description": "handler for legacy v2.* errbit ",
   "main": "index.js",
   "dependencies": {
