@@ -95,6 +95,9 @@ module.exports = class Airbrake {
           'Content-Length': message.length
         }
       }, res => res.statusCode == 200 ? resolve() : reject(`${res.statusMessage}: ${res.statusMessage}`));
+      req.on('error', (e) => {
+        console.error(`Error on errbit-legacy. Problem with request: ${e.message}`);
+      });
       req.write(message);
       req.end();
     });
